@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>左右固定中间自适应三栏布局-1</title>
+  <meta name="description" content="左侧左浮动，右侧右浮动，中间div左右margin皆为210px、宽度自适应，中间一栏必须放在最后">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    .col {
+      width: 200px;
+      height: 100%;
+    }
+    .left.col {
+      float: left;
+      background-color: #03A9F4;
+    }
+    .right.col {
+      float: right;
+      background-color: #F44336;
+    }
+    .mid {
+      margin: 0 210px;
+      height: 100%;
+      background-color: #eee;
+    }
+  </style>
+</head>
+<body>
+  <div class="right col"></div>
+  <div class="left col"></div>
+  <div class="mid"></div>
+</body>
+</html>

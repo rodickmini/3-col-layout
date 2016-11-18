@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>左右固定中间自适应三栏布局-4</title>
+  <meta name="description" content="方案1和2的结合，能保证DOM结构的顺序是左中右的">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    .col {
+      height: 100%;
+    }
+    .left {
+      width: 200px;
+      float: left;
+      background-color: #03A9F4;
+    }
+    .mid {
+      margin: 0 210px;
+      background-color: #eee;
+    }
+    .right {
+      width: 200px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: #F44336;
+    }
+  </style>
+</head>
+<body>
+  <div class="left col"></div>
+  <div class="mid col"></div>
+  <div class="right col"></div>
+</body>
+</html>

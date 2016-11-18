@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>左右固定中间自适应三栏布局-2</title>
+  <meta name="description" content="左右绝对定位，中间栏设置左右margin，左中右三栏顺序随意排列都可以">
+  <style>
+  html, body {
+    margin: 0;
+    height: 100%;
+  }
+  .col {
+    height: 100%;
+  }
+  .left,.right {
+    width: 200px;
+    position: absolute;
+    top: 0;
+  }
+  .left {
+    left: 0;
+    background-color: #03A9F4;
+  }
+  .right {
+    right: 0;
+    background-color: #F44336;
+  }
+  .mid {
+    margin: 0 210px;
+    background-color: #ccc;
+  }
+  </style>
+</head>
+<body>
+  <div class="mid col"></div>
+  <div class="right col"></div>
+  <div class="left col"></div>
+</body>
+</html>
